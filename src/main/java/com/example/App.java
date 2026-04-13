@@ -11,7 +11,7 @@ public class App
     {
         // Setup Chrome options for headless execution (Jenkins compatible)
         ChromeOptions options = new ChromeOptions();
-       // options.addArguments("--headless");                // Run without GUI
+        options.addArguments("--headless");                // Run without GUI
         options.addArguments("--no-sandbox");              // Required in Jenkins/VM
         options.addArguments("--disable-dev-shm-usage");   // Prevent crashes
         options.addArguments("--remote-allow-origins=*");  // Fix for newer Chrome issues
